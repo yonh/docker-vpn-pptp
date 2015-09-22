@@ -1,8 +1,12 @@
 ## build && run
-docker build -t yonh/vpn .
-docker run -d --privileged -p 1723:1723 yonh/vpn
+docker build -t yonh/vpn .  
+docker run -d --privileged -p 1723:1723 yonh/vpn  
+
+如果你想更改用户配置,就去修改etc/ppp/chap-secrets文件  
+默认账号:vvv, 密码:vvv
 
 
+原作者说明如下
 ## VPN (PPTP) for Docker
 
 This is a docker image with simple VPN (PPTP) server with _chap-secrets_ authentication.
