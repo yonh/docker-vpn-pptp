@@ -1,4 +1,9 @@
-# VPN (PPTP) for Docker
+## build && run
+docker build -t yonh/vpn .
+docker run -d --privileged -p 1723:1723 yonh/vpn
+
+
+## VPN (PPTP) for Docker
 
 This is a docker image with simple VPN (PPTP) server with _chap-secrets_ authentication.
 
